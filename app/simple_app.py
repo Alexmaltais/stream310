@@ -146,6 +146,7 @@ ligne_affaires = side_bar.selectbox("Choisir la ligne d'affaires", columns)
 
 # BODY
 
+st.title("Ventes AISF")
 st.dataframe(merged_LC[["NO_OIPA", ligne_affaires]])
 
 # alt_object_LC = alt.Chart(df_select.head(20)).mark_bar().encode(x=ligne_affaires, y=alt.Y("NO_OIPA", type="nominal", sort="-x"))
